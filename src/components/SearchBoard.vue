@@ -18,7 +18,16 @@
           </div>
           <button
             @click="getMusic()"
-            class="btn waves-effect waves-light top-1rem col s12 m10 l6 push-l3 push-m1"
+            class="
+              btn
+              waves-effect waves-light
+              top-1rem
+              col
+              s12
+              m10
+              l6
+              push-l3 push-m1
+            "
             type="submit"
             name="action"
           >
@@ -33,18 +42,20 @@
 
 <script setup lang="ts">
 import { ref } from "vue";
-import { useStore } from "vuex"
+import { useStore } from "vuex";
 import axios from "axios";
 
 const store = useStore();
 const searchText = ref<string>();
 const searchResult = ref<object[]>();
 const getMusic = async () => {
-  searchResult.value = await axios.get(
-    `https://itunes.apple.com/search?term=${searchText.value}&country=jp`
-  ).then((response) => response.data).then((response) => response.results);
+  store.commit("setLoding", true);
+  searchResult.value = await axios
+    .get(`https://itunes.apple.com/search?term=${searchText.value}&country=${store.state.locale}`)
+    .then((response) => response.data)
+    .then((response) => response.results);
   console.log(searchResult.value);
   store.commit("storeResult", searchResult.value);
+  store.commit("setLoding", false);
 };
-
 </script>
