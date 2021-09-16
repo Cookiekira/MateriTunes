@@ -1,21 +1,12 @@
-# Vue 3 + Typescript + Vite + WindiCSS
+# Search for music in iTunes Store 
 
-This template should help get you started developing with Vue 3 Typescript and WindiCSS in Vite.
+A simple reactive webapp (Uncompleted) 
 
-This starter template also includes:
+Using [Vue3](https://v3.vuejs.org/) [Vite](https://vitejs.dev/) [WindiCSS](https://windicss.org/) [Materialize](https://materializecss.com/)  [iTunesApi](https://developer.apple.com/library/archive/documentation/AudioVideo/Conceptual/iTuneSearchAPI/index.html)
 
-- [Vue Router 4.x](https://github.com/vuejs/vue-router-next)
-- [Vuex 4.x ](https://next.vuex.vuejs.org/)
+![](https://imgs-1257448213.file.myqcloud.com/%E6%88%AA%E5%B1%8F2021-09-16%20%E4%B8%8A%E5%8D%888.42.19.png)
 
-## Recommended IDE Setup
-
-- [VSCode](https://code.visualstudio.com/) + [Volar](https://marketplace.visualstudio.com/items?itemName=johnsoncodehk.volar)
-
-- [![Open in Visual Studio Code](https://open.vscode.dev/badges/open-in-vscode.svg)](https://open.vscode.dev/Cookiekira/vite-vue3-windi-starter)
-
-## Type Support For `.vue` Imports in TS
-
-Since TypeScript cannot handle type information for `.vue` imports, they are shimmed to be a generic Vue component type by default. In most cases this is fine if you don't really care about component prop types outside of templates. However, if you wish to get actual prop types in `.vue` imports (for example to get props validation when using manual `h(...)` calls), you can enable Volar's `.vue` type support plugin by running `Volar: Switch TS Plugin on/off` from VSCode command palette.
+<img src="https://imgs-1257448213.file.myqcloud.com/%E6%88%AA%E5%B1%8F2021-09-16%20%E4%B8%8A%E5%8D%888.38.23.png" alt="截屏2021-09-16 上午8.38.23" style="zoom:50%;" />
 
 ## Project setup
 ```
