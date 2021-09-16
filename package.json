@@ -1,6 +1,6 @@
 {
-  "name": "vite-vue3-windi-starter",
-  "version": "0.0.0",
+  "name": "materitunes",
+  "version": "0.1.0",
   "scripts": {
     "dev": "vite --host",
     "build": "vue-tsc --noEmit && vite build",
@@ -8,6 +8,7 @@
     "lint": "eslint"
   },
   "dependencies": {
+    "axios": "^0.21.4",
     "eslint": "^7.32.0",
     "vue": "^3.2.11",
     "vue-router": "^4.0.11",

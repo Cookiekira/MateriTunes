@@ -1,7 +1,15 @@
-
-
 <template>
-<div id="nav"><router-link to="/">Home</router-link>|<router-link to="/about">About</router-link></div><router-view></router-view>
+  <div style="background-color:#f5f5f5">
+    <nav class="light-green light-green lighten-2">
+      <div class="nav-wrapper">
+        <a href="#" class="brand-logo center">MateriTunes</a>
+        <a class="btn-floating pulse btn-large waves-effect waves-light left-40vw">
+          <i class="large material-icons">menu</i>
+        </a>
+      </div>
+    </nav>
+    <router-view></router-view>
+  </div>
 </template>
 
 <style>
@@ -11,18 +19,5 @@
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
   color: #2c3e50;
-  margin-top: 60px;
-}
-#nav {
-  padding: 30px;
-}
-
-#nav a {
-  font-weight: bold;
-  color: #2c3e50;
-}
-
-#nav a.router-link-exact-active {
-  color: #42b983;
 }
 </style>
