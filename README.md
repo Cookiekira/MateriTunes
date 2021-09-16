@@ -4,9 +4,9 @@ A simple reactive webapp (Uncompleted)
 
 Using [Vue3](https://v3.vuejs.org/) [Vite](https://vitejs.dev/) [WindiCSS](https://windicss.org/) [Materialize](https://materializecss.com/)  [Naive-UI](https://www.naiveui.com/zh-CN/os-theme)  [iTunesApi](https://developer.apple.com/library/archive/documentation/AudioVideo/Conceptual/iTuneSearchAPI/index.html)
 
-![pc](/Users/cookiekira/Documents/MateriTunes/imgs/pc.png)
+![pc](./imgs/pc.png)
 
-<img src="/Users/cookiekira/Documents/MateriTunes/imgs/mobilephone.jpg" alt="mobilephone" style="zoom: 33%;" />
+<img src="./imgs/mobilephone.jpg" alt="mobilephone" style="zoom: 33%;" />
 
 ## Project setup
 
