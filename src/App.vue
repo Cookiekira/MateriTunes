@@ -36,7 +36,8 @@ const options:Array<any> = [
 ];
 
 function handleSelect(key: string) {
-  M.toast({html:`<span>Search in ${key} now</span><button class="btn-flat toast-action">Success</button> `,classes: 'rounded'});
+  
+  // M.toast({html:`<span>Search in ${key} now</span><button class="btn-flat toast-action">Success</button> `,classes: 'rounded'});
   store.commit('setLocale', key);
 }
 </script>

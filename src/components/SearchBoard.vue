@@ -14,7 +14,7 @@
               type="text"
               class="validate"
             />
-            <label for="searchText">Try</label>
+            <label for="searchText">iTunes {{store.state.locale}}</label>
           </div>
           <button
             @click="getMusic()"
