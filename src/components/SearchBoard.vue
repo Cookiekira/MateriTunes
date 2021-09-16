@@ -14,7 +14,7 @@
               type="text"
               class="validate"
             />
-            <label for="searchText">iTunes {{store.state.locale}}</label>
+            <label for="searchText">iTunes {{ store.state.locale }}</label>
           </div>
           <button
             @click="getMusic()"
@@ -51,7 +51,9 @@ const searchResult = ref<object[]>();
 const getMusic = async () => {
   store.commit("setLoding", true);
   searchResult.value = await axios
-    .get(`https://itunes.apple.com/search?term=${searchText.value}&country=${store.state.locale}`)
+    .get(
+      `https://itunes.apple.com/search?term=${searchText.value}&country=${store.state.locale}`
+    )
     .then((response) => response.data)
     .then((response) => response.results);
   console.log(searchResult.value);
@@ -59,3 +61,15 @@ const getMusic = async () => {
   store.commit("setLoding", false);
 };
 </script>
+
+<style scoped>
+.card-content {
+  background: url("../assets/img/bg_mv_repeat.png"),
+    linear-gradient(
+      45deg,
+      rgba(246, 171, 251, 0.349) 0%,
+      rgba(102, 215, 249, 0.74) 52%,
+      rgba(93, 253, 162, 0.616) 90%
+    );
+}
+</style>
