@@ -1,5 +1,5 @@
 <template>
-  <div style="background-color: #f5f5f5" class="h-screen">
+  <div style="background-color: #f5f5f5" class="h-full">
     <nav class="light-green light-green lighten-2">
       <div class="nav-wrapper">
         <a href="#" class="brand-logo center">MateriTunes</a>
@@ -17,13 +17,13 @@
 
 <script setup lang="ts">
 import { NDropdown } from "naive-ui";
-import {useStore} from "vuex"
+import { useStore } from "vuex";
 
 const store = useStore();
-const options:Array<any> = [
+const options: Array<any> = [
   {
-    label:"Change Locale",
-    disabled: true
+    label: "Change Locale",
+    disabled: true,
   },
   {
     label: "Japan",
@@ -36,14 +36,12 @@ const options:Array<any> = [
 ];
 
 function handleSelect(key: string) {
-  
   // M.toast({html:`<span>Search in ${key} now</span><button class="btn-flat toast-action">Success</button> `,classes: 'rounded'});
-  store.commit('setLocale', key);
+  store.commit("setLocale", key);
 }
 </script>
 <style>
 #app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;

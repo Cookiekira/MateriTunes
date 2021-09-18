@@ -18,16 +18,7 @@
           </div>
           <button
             @click="getMusic()"
-            class="
-              btn
-              waves-effect waves-light
-              top-1rem
-              col
-              s12
-              m10
-              l6
-              push-l3 push-m1
-            "
+            class="btn waves-effect waves-light top-1rem col s12 m10 l6 push-l3 push-m1"
             type="submit"
             name="action"
           >
@@ -56,7 +47,7 @@ const getMusic = async () => {
     )
     .then((response) => response.data)
     .then((response) => response.results);
-  console.log(searchResult.value);
+  // console.log(searchResult.value);
   store.commit("storeResult", searchResult.value);
   store.commit("setLoding", false);
 };
