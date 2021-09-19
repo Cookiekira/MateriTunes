@@ -1,6 +1,6 @@
 # Search for music in iTunes Store 
 
-A simple reactive webapp (Uncompleted) 
+A simple reactive webapp 
 
 Using [Vue3](https://v3.vuejs.org/) [Vite](https://vitejs.dev/) [WindiCSS](https://windicss.org/) [Materialize](https://materializecss.com/)  [Naive-UI](https://www.naiveui.com/zh-CN/os-theme)  [iTunesApi](https://developer.apple.com/library/archive/documentation/AudioVideo/Conceptual/iTuneSearchAPI/index.html)
 
