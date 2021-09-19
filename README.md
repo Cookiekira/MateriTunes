@@ -6,8 +6,6 @@ Using [Vue3](https://v3.vuejs.org/) [Vite](https://vitejs.dev/) [WindiCSS](https
 
 ![pc](./imgs/pc.png)
 
-<img src="./imgs/mobilephone.jpg" alt="mobilephone" style="zoom: 33%;" />
-
 ## Project setup
 
 ```

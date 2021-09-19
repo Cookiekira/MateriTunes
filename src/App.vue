@@ -1,5 +1,5 @@
 <template>
-  <div style="background-color: #f5f5f5" class="h-full">
+  <div style="background-color: #f5f5f5" class="h-full min-h-screen">
     <nav class="light-green light-green lighten-2">
       <div class="nav-wrapper">
         <a href="#" class="brand-logo center">MateriTunes</a>
