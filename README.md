@@ -29,3 +29,7 @@ pnpm run lint
 
 ### Customize configuration
 See [Configuring Vite](https://vitejs.dev/config/).
+
+## License
+
+[MIT license](https://opensource.org/licenses/MIT)
