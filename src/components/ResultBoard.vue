@@ -37,7 +37,7 @@
 
             <i class="material-icons right">close</i>
           </span>
-          <p>{{ item.releaseDate.substr(0, 10) }}</p>
+          <p>{{ (item.releaseDate?.length >= 10) ? item.releaseDate.substr(0, 10) : item.releaseDate }}</p>
         </div>
       </div>
     </div>
@@ -45,7 +45,7 @@
 </template>
 
 <script setup lang="ts">
-import { computed, ref } from "vue";
+import { computed } from "vue";
 import { useStore } from "vuex";
 import { NSpin, NEllipsis, NGradientText } from "naive-ui";
 const store = useStore();

@@ -43,7 +43,7 @@ const getMusic = async () => {
   store.commit("setLoding", true);
   searchResult.value = await axios
     .get(
-      `https://itunes.apple.com/search?term=${searchText.value}&country=${store.state.locale}`
+      `api/search?term=${searchText.value}&country=${store.state.locale}`
     )
     .then((response) => response.data)
     .then((response) => response.results);
